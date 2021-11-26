@@ -1,0 +1,30 @@
+header {
+ background-image: url(/img/header3.jpg);
+    background-position: center;
+    background-size: cover;
+ 
+    height: 60vh;
+    ;
+}
+
+nav .navbar-brand {
+    font-size: 2.6rem;
+}
+header
+h1 {
+color: rgb(34, 32, 32);
+font-size: 3rem;
+}
+footer {
+    padding: 50px;
+    color: whitesmoke;
+    background: rgb(70, 68, 68);
+    text-align: center;
+}
+ #dodajPosaoPrikaz,#izmeniPosaoPrikaz{
+    display: none;
+}
+thead {
+    background:rgb(27, 33, 39);
+    color: whitesmoke;
+}

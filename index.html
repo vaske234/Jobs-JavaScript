@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+ 
+</head>
+<body>
+    
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+<div class="container">
+    <a href="" class="navbar-brand">Jobs</a>
+    <ul class="navbar-nav">
+ <li class="nav-item">
+     <a href="posloviPrikaz" class="nav-link">Jobs</a>
+ </li>
+ <li class="nav-item">
+    <a href="dodajPosaoPrikaz" class="nav-link">add a job</a>
+</li>
+    </ul>
+</div>
+</nav>
+
+
+<!-- header -->
+<header class="d-flex justify-content-center align-items-center">
+<h1 style="font-style: italic;">Stock market</h1>
+</header>
+<div class="container">
+    <!-- prikaz jedan -->
+    <div class="row prikaz py-5" id="posloviPrikaz">
+        <div class="col-md-12">
+            <h2 class="display-4 text-center">Jobs</h2>
+            <table class="table table-striped">
+                <thead class="thead-dark">
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>position</th>
+    <th>Email</th>
+    <th>Number</th>
+    <th>Change</th>
+    <th>Delete</th>
+</tr>
+                </thead>
+                <tbody id="posloviTabela"> </tbody>
+
+            </table>
+        </div>
+    </div>
+     <!-- prikaz dva -->
+     <div class="row prikaz py-5" id="dodajPosaoPrikaz">
+        <div class="col-md-12">
+            <h2 class="display-4 text-center"> Add Jobs</h2>
+   <div>
+       <input type="text " class="form-control  mb-3"  placeholder="id">
+          <input type="text " class="form-control mb-3" placeholder="name">
+          <input type="text " class="form-control mb-3" placeholder="position">
+          <input type="text " class="form-control mb-3" placeholder="email">
+          <input type="text " class="form-control mb-3" placeholder="number">
+          <button class="form-control btn btn-success" id="dodaj">add jobs </button>
+
+   </div>
+        </div>
+    </div>
+       <!-- izmeni prikaz dva -->
+       <div class="row prikaz py-5" id="izmeniPosaoPrikaz">
+        <div class="col-md-12">
+            <h2 class="display-4 text-center"> change Jobs</h2>
+   <div>
+       <input type="text " class="form-control  mb-3 izmeniId  ">
+          <input type="text " class="form-control mb-3 izmeniName">
+          <input type=" text " class="form-control mb-3 izmeniPosition">
+          <input type="text " class="form-control mb-3 izmeniEmail">
+          <input type="text " class="form-control mb-3 izmeniNumber">
+          <button class="form-control btn btn-success" id="izmeni">change jobs </button>
+
+   </div>
+        </div>
+    </div>
+</div>
+
+<footer> 
+    <p>&copy;Stock Market</p>
+</footer>
+<script src="bazapodataka.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
